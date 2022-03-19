@@ -16,6 +16,9 @@ const ResultsList = ({ title, results, navigation }) => {
         )
     }
 
+    if(!results.length){
+        return null
+    }
     return(
         <View>
             <Text style={styles.titleStyle}>{title}</Text>
